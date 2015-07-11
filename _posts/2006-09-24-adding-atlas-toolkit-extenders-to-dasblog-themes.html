@@ -18,8 +18,6 @@ author:
   display_name: Kyle Baley
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
 ---
 <p>So now that <a href="http://www.dasblog.info">DasBlog</a>&nbsp;was all <a href="http://kyle.baley.org/AtlasAndDasBlog19TheBetterWay.aspx">set up for Atlas</a>, complete with ScriptManager, the next step was to add a couple of controls from the <a href="http://atlas.asp.net/default.aspx?tabid=47&amp;subtabid=477">Atlas Control Toolkit</a>. Specifically, I'm using a TextBoxWatermark in the search box and RoundedCorner and CollapsiblePanel controls for each of the funky brown blobs you see to the right.</p>
 <p>In the first iteration, I had opened up each of these controls individually and had myself a little hootenanny in each one. I created a bunch of panels and images programmatically within the Render method as well as CollapsiblePanel and RoundedCorners controls attached to these panels. At some point, I found it necessary even to move all of that code out of the Render method and into CreateChildControls (where I believe it belongs; what if I want to handle events by any of the constituent controls?). Can't remember why I needed it, probably for the calendar which required me to create a whole brand now control specifically so I could wrap it in a bunch of Panels to house the heading and dropdown image.</p>

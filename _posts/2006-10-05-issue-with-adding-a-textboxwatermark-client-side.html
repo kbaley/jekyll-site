@@ -18,8 +18,6 @@ author:
   display_name: Kyle Baley
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
 ---
 <p>Here's something you may not know about the <a href="http://atlas.asp.net/atlastoolkit/TextBoxWatermark/TextBoxWatermark.aspx">TextboxWatermark</a> Atlas Control. If you use the normal server-side control as depicted in the samples, the control will clear the watermark text from the textbox before submitting the form if the user hasn't added a value. Which is good. But if you add the TextboxWatermark client-side, it will submit the watermark text as the textbox's value. Which is bad. The rest of this post outlines why this happens so skip it if you don't care.</p>
 <p>The TextboxWatermarkExtender class will loop through the Extender and register a little bit of javascript for each watermark control in the extender. One of those pieces is to register an OnSubmit statement which means that the script it's registering will get executed just before the form containing the textbox gets submitted.</p>

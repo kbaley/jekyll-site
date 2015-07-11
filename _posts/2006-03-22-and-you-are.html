@@ -16,8 +16,6 @@ author:
   display_name: Kyle Baley
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
 ---
 <p>All right, I'm tired of spewing knowledge (or whatever it is I spew). I've heard rumours of a feature in SQL 2005 that might interest me and I'm in no mood to look up the details.</p>
 <p>I was recently involved in a discussion where someone wanted to connect to a database from a web service. In it, he wanted to use impersonation (for obvious reasons) but also connection pooling (for obvious reasons). Essentially, the requirement was to use the user's credentials for everything within the web service except database actions where he would switch to a single user to allow for connection pooling. Yes, it's possible with a SQL user but we don't want to do it the easy way, do we? We've always been told SQL Authentication is bad (even though we use it anyway for demos and prototypes and never get around to changing it in production).</p>

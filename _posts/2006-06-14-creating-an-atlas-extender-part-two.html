@@ -17,8 +17,6 @@ author:
   display_name: Kyle Baley
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
 ---
 <p>Phew! This Atlas Extender thing isn't as easy as I thought it would be. Have spent a good part of the day trying to build my dream toggle-able panels and am no further than I was yesterday. Gained a bit of knowledge though and yes, it is in fact a dangerous thing.</p>
 <p>In my original attempt, I essentially duplicated the existing CollapsiblePanel extender so I'd have something to start from. My next task was to remove properties I didn't plan to implement: ExpandControlID, ExpandDirection, AutoCollapse and&nbsp;AutoExpand. ExpandControlID because I'm forcing the control to be a toggle. AutoCollapse and AutoExpand because they don't really make sense in this context. ExpandDirection because, frankly, I have enough to worry about.</p>

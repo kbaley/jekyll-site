@@ -17,8 +17,6 @@ author:
   display_name: Kyle Baley
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
 ---
 <p>I've been following the <a href="http://igloocoder.com/">Igloo Coder</a>'s series on <a href="http://igloocoder.com/archive/2006/07/04/394.aspx">Code Naming Conventions</a>. Think I'm past the point where I can change my naming conventions (or at least to do so consistently) but the articles have a good layout with a summary of the main schools of thought followed by the Inuit's intuitions.</p>
 <p>The series fits in with the idea of <a href="http://kyle.baley.org/archive/2006/05/06/387.aspx">Conscientious Coding</a> I mentioned in an earlier article so I'll throw in some of my own comments. My own naming conventions are moot but for the record, I'm not a fan of Hungarian notation. Part of my philosophy is that the code has to “look” good and throwing str's and int's at the beginning of variable names takes away from the aesthetics. Not very scientific, I know, but it's in keeping with the Conscientious Coding mantra: Be nice to the next person looking at your code. You could argue that giving clues to your variable's intent is being nice but I would argue that a decent developer will have no issues deciphering what type of variable it is from the code itself. Hard to misinterpret <font face="Courier New">errorMessage = “An error occurred: ” + exception.Message</font>; and where there is ambiguity, maybe some comments.</p>

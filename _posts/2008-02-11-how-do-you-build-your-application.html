@@ -21,8 +21,6 @@ author:
   display_name: Kyle Baley
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
 ---
 <p> The Hillbilly asks: How do you compile your application in your NAnt script for releases?</p>
 <p>There are many options, you see, even though the <a href="http://nant.sourceforge.net/release/0.85-rc1/help/tasks/solution.html">&lt;solution&gt;</a> task is no longer one of them. You could use the <a href="http://nantcontrib.sourceforge.net/release/0.85-rc4/help/tasks/msbuild.html">&lt;msbuild&gt;</a> task to build the solution as it is built in VS (I think; the documentation is a little sketchy on this task if you don't know the inner workings of msbuild). Or you could use the <a href="http://nant.sourceforge.net/nightly/latest/help/tasks/csc.html">&lt;csc&gt;</a> or <a href="http://nant.sourceforge.net/nightly/latest/help/tasks/vbc.html">&lt;vbc&gt;</a> tasks to compile a group of code files into an assembly (similar to a .csproj or .vbproj file). Or, for the ultimate control, you could use the <a href="http://nant.sourceforge.net/nightly/latest/help/tasks/exec.html">&lt;exec&gt;</a> task to call out to msbuild.exe, csc.exe, or vbc.exe directly though I couldn't tell you personally what that offers you that the corresponding tasks don't. Future-proofing maybe.</p>

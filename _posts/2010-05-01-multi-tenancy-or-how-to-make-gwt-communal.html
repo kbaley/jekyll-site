@@ -17,8 +17,6 @@ author:
   display_name: Kyle Baley
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
 ---
 <p>Before I get started, I should point out I may have a shaky definition of the term “multitenancy”. I haven’t exactly studied up on it but I’ve skimmed some blog posts and I hope it means what I think it means.</p>
 <p>In our Google Web Toolkit application, we’re going to have multiple clients but only a single instance of the app and only a single data store. Multiple instances of the application and the data store aren’t feasible as we are deploying to Google App Engine. That makes it sound like Google App Engine dictated the solution but it was more of an “icing on the cake” thing. Even if we were doing it in SQL, we were going to do it in one database. I think one reason was to make it easier to aggregate data but I hope there were more reasons because that one is kind of lame. After all, we could aggregate all the data we want into a separate database for reporting purposes.</p>

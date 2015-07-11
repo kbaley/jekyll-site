@@ -17,8 +17,6 @@ author:
   display_name: Kyle Baley
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
 ---
 <p>This is kind of an extension to my <a href="http://kyle.baley.org/BlowerywebAndASPNETAJAXOrQuotHowToMediateTwixtCompressorsquot.aspx">earlier post</a> on Blowery.web and ScriptResource.axd. I've completed the migration to <a href="http://www.dasblog.info" target="_blank">dasBlog</a> 1.9.7-ish (doesn't it look awesome?). Which probably wasn't a wise thing to do since a brand new release version is expected in the next couple of weeks after which time, it looks like I won't need to upgrade the project to ASP.NET 2.0 myself anymore. But <a href="http://www.hanselman.com/blog/DasBlogJune2007Release.aspx" target="_blank">Scott's timing</a> doesn't mesh with my vacation schedule (come June 14, I's be a European Hillbilly for a couple of weeks).</p>
 <p>Tweaking dasBlog to work with the current version of ASP.NET AJAX and the AJAX Toolkit will wait for a future post. For now, I just want to discuss an issue that actually came up the <a href="http://kyle.baley.org/AddingAtlasToDasBlogAlmost.aspx">last time I did this</a> but I didn't look into it in much detail. Essentially, whenever a postback was required (posting a comment, updating the configuration, etc, etc, and so on and so forth), I would get an error that WebForm_PostBackOptions was undefined.</p>

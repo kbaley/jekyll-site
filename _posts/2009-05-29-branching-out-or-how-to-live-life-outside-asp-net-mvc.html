@@ -19,8 +19,6 @@ author:
   display_name: Kyle Baley
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
 ---
 <p>I’m in the early stages of writing a web app with a friend who has been somewhat on the periphery of ASP.NET MVC. As in, when someone says “let’s build a web app”, he doesn’t automatically reach for the MVC project template as I typically do. Bear in mind, he’s also not a web forms fan either.</p>
 <p>Instead, he has a very specific architecture in mind that has taken me some time to come around to. A simplified version of it is thus: there is one web application for the various HTML files (and yes, they will be HTML only) and another for the “services”. The services one will serve up primarily JSON to the client which will interact with it with a very healthy dose of JavaScript. This is one reason we’ve decided on <a href="http://www.ohloh.net/p/openrasta">OpenRasta</a> for the services layer.</p>

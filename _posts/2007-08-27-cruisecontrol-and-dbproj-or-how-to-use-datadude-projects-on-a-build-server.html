@@ -18,8 +18,6 @@ author:
   display_name: Kyle Baley
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
 ---
 <p>How's this for obscure? Our solution contains a .dbproj file, which for those not in the know (including me up until about three days ago), is a type of project that is added when you install Visual Studio Team System for Database Professionals (pka DataDude after the legendary surfer that built it). We also use Cruise Control on a build server which does *not* have Visual Studio Team System for Database Professionals installed.</p>
 <p>The issue was that the build would fail on the build server because of some reference to VSDBPro in the dbproj. Specifically:<br /><font color="#ff0000" size="1">D:ccnetprojectsCritterClassifierSourceDatabaseEHTDB.dbproj(75,11): error MSB4019: The imported<br />project "C:Program FilesMSBuildMicrosoftVisualStudiov8.0TeamDataMicrosoft.VisualStudio.TeamSystem.<br />Data.Tasks.targets" was not found. Confirm that the path in the &lt;Import&gt; declaration is correct, and <br />that the file exists on disk.</font></p>

@@ -16,8 +16,6 @@ author:
   display_name: Kyle Baley
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
 ---
 <p>Coming off a week at <a href="http://www.devteach.com">DevTeach</a>. <a href="http://www.ayende.com/Blog/archive/2008/05/16/DevTeach-SummaryAgain.aspx">Others</a> <a href="http://codebetter.com/blogs/gregyoung/archive/2008/05/15/devteach-after-thoughts.aspx">have</a>&#160;<a href="http://msmvps.com/blogs/peterritchie/archive/2008/05/16/devteach-toronto-2008.aspx">commented</a> on how great it is so I'll just use my own observation as a lead-in for the real meat. DevTeach gives me a renewed interest in learning. After seeing presentations on topics I've kinda sorta grokked/solubled, it's nice to gain further insight into them. So I come away with a laundry list of patterns, techniques, tools, and frameworks to look into.</p>
 <p>And one of those techniques is auto-registration of components in an IoC container. Ayende has talked about this quite a bit with <a href="http://www.ayende.com/Blog/archive/7268.aspx">Binsor</a> and I did get to see it in action. But recently, there have been enhancements to Windsor itself to allow for this in a relatively clean(er) way. Hammett has an example <a href="http://hammett.castleproject.org/?cat=11">here</a> as does <a href="http://www.kenegozi.com/Blog/2008/03/01/windsor-mass-component-registration.aspx">Ken Egozi</a> (who took it directly from the Castle dev list). Note that the syntax is slightly different 'twixt the two (AllTypes&lt;T&gt;.Of vs. AllTypesOf&lt;T&gt;). I just got the latest from the trunk and it appears to be the former syntax at the moment.</p>

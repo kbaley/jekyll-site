@@ -18,8 +18,6 @@ author:
   display_name: Kyle Baley
   first_name: ''
   last_name: ''
-excerpt: !ruby/object:Hpricot::Doc
-  options: {}
 ---
 <p>Quick PSA on using cron jobs with <a href="https://developers.google.com/appengine/docs/java/config/cron" target="_blank">Google App Engine</a> because it almost wreaked havoc for us.</p>
 <p>App Engine has a lovely feature of having different versions of your app. You can upload a new version but not make it the default until you’re good and ready. We do this all the time for deployment. Deploy to a new version and try it out, then make it the default when we’re ready to unleash it. Often, we deploy to the new version a day or so in advance.</p>
